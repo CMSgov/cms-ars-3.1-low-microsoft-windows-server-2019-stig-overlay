@@ -2,19 +2,226 @@
 
 include_controls "microsoft-windows-server-2019-stig-baseline" do
 
+  control "V-92961" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-92963" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-92965" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-92971" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-92973" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-92975" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-92977" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
   control "V-93019" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93021" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93023" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
+  end
+
+  control "V-93025" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93027" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93029" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93031" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93033" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93035" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93037" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93039" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93041" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93043" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93045" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93047" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93049" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93051" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93053" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93055" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93057" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93059" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93061" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93063" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93065" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93067" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93069" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93071" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93073" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93075" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93077" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93079" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93081" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93083" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93085" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93087" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93141" do
+    title "Windows Server 2019 must have the number of allowed bad logon attempts configured to five or less."
+    desc  'check', "Verify the effective setting in Local Group Policy Editor.
+      Run \"gpedit.msc\".
+      Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy.
+      If the \"Account lockout threshold\" is \"0\" or more than \"5\" attempts, this is a finding.
+      For server core installations, run the following command:
+      Secedit /Export /Areas SecurityPolicy /CFG C:\\Path\\FileName.Txt
+      If \"LockoutBadCount\" equals \"0\" or is greater than \"5\" in the file, this is a finding."
+    desc  'fix', "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy >> \"Account lockout threshold\" to \"5\" or fewer invalid logon attempts (excluding \"0\", which is unacceptable)."
   end
 
   control "V-93143" do
@@ -27,21 +234,6 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
       Secedit /Export /Areas SecurityPolicy /CFG C:\\Path\\FileName.Txt
       If \"ResetLockoutCount\" is less than \"120\" in the file, this is a finding."
     desc  'fix', "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy >> \"Reset account lockout counter after\" to at least \"120\" minutes."
-  end
-
-  control "V-93145" do
-    title "Windows Server 2019 account lockout duration must be configured to 60 minutes or greater."
-    desc  'check', "Verify the effective setting in Local Group Policy Editor.
-      Run \"gpedit.msc\".
-      Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy.
-      If the \"Account lockout duration\" is less than \"60\" minutes (excluding \"0\"), this is a finding.
-  
-      For server core installations, run the following command:
-      Secedit /Export /Areas SecurityPolicy /CFG C:\\Path\\FileName.Txt
-      If \"LockoutDuration\" is less than \"60\" (excluding \"0\") in the file, this is a finding.
-      Configuring this to \"0\", requiring an administrator to unlock the account, is more restrictive and is not a finding."
-    desc  'fix', "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Account Lockout Policy >> \"Account lockout duration\" to \"60\" minutes or greater.
-      A value of \"0\" is also acceptable, requiring an administrator to unlock the account."
   end
 
   control "V-93147" do
@@ -87,62 +279,67 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
     If an organization-defined title is used, it can in no case contravene or modify the language of the message text required in WN19-SO-000150."
   end
 
+  control "V-93173" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93175" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
   control "V-93183" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93185" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93187" do
-    title "The Windows Server 2019 time service must synchronize with an appropriate CMS time source."
-    desc  'check', "Review the Windows time service configuration.
-    Open an elevated \"Command Prompt\" (run as administrator).
-    Enter \"W32tm /query /configuration\".
-    Domain-joined systems (excluding the domain controller with the PDC emulator role):
-    If the value for \"Type\" under \"NTP Client\" is not \"NT5DS\", this is a finding.
-
-    Other systems:
-    If systems are configured with a \"Type\" of \"NTP\", including standalone systems and the domain controller with the PDC Emulator role, and do not have a CMS time server defined for \"NTPServer\", this is a finding.
-
-    CMS-approved time servers include:
-    - NIST Internet Time Servers (http://tf.nist.gov/tf-cgi/servers.cgi)
-    - U.S. Naval Observatory Stratum-1 NTP Servers (http://tycho.usno.navy.mil/ntp.html); and
-    - CMS designated internal NTP time servers providing an NTP Stratum-2 service to the above servers
-
-    To determine the domain controller with the PDC Emulator role:
-    Open \"PowerShell\".
-    Enter \"Get-ADDomain | FT PDCEmulator\"."
-    desc  'fix', "Configure the system to synchronize time with an appropriate CMS time source.
-    Domain-joined systems use NT5DS to synchronize time from other systems in the domain by default.
-    If the system needs to be configured to an NTP server, configure the system to point to an authorized time server by setting the policy value for Computer Configuration >> Administrative Templates >> System >> Windows Time Service >> Time Providers >> \"Configure Windows NTP Client\" to \"Enabled\", and configure the \"NtpServer\" field to point to an appropriate CMS time server.
-
-    CMS-approved time servers include:
-    - NIST Internet Time Servers (http://tf.nist.gov/tf-cgi/servers.cgi)
-    - U.S. Naval Observatory Stratum-1 NTP Servers (http://tycho.usno.navy.mil/ntp.html); and
-    - CMS designated internal NTP time servers providing an NTP Stratum-2 service to the above servers
-
-    Time synchronization will occur through a hierarchy of time servers down to the local level. Clients and lower-level servers will synchronize with an authorized time server in the hierarchy."
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93199" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93201" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93203" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
+  control "V-93209" do
+    title "Windows Server 2019 manually managed application account passwords must be changed at least every 60 days and when a system administrator with knowledge of the password leaves the organization."
+    desc  "Setting application account passwords to expire may cause applications to stop functioning. However, not changing them on a regular basis exposes them to attack. If managed service accounts are used, this alleviates the need to manually change application account passwords."
+    desc  'check', "Determine if manually managed application/service accounts exist. If none exist, this is NA.
+      If passwords for manually managed application/service accounts are not changed at least every 60 days and when an administrator with knowledge of the password leaves the organization, this is a finding.
+      Identify manually managed application/service accounts.
+      To determine the date a password was last changed:
+  
+      Domain controllers:
+      Open \"PowerShell\".
+      Enter \"Get-AdUser -Identity [application account name] -Properties PasswordLastSet | FT Name, PasswordLastSet\", where [application account name] is the name of the manually managed application/service account.
+      If the \"PasswordLastSet\" date is more than 60 days old, this is a finding.
+  
+      Member servers and standalone systems:
+      Open \"Command Prompt\".
+      Enter 'Net User [application account name] | Find /i \"Password Last Set\"', where [application account name] is the name of the manually managed application/service account.
+      If the \"Password Last Set\" date is more than 60 days old, this is a finding."
+    desc  'fix', "Change passwords for manually managed application/service accounts at least every 60 days and when an administrator with knowledge of the password leaves the organization.
+      It is recommended that system-managed service accounts be used whenever possible."
+  end
+  
   control "V-93285" do
     title "Windows Server 2019 maximum age for machine account passwords must be configured to 60 days or less."
     desc  "Computer account passwords are changed automatically on a regular basis. This setting controls the maximum password age that a machine account may have. This must be set to no more than 60 days, ensuring the machine changes its password bi-monthly."

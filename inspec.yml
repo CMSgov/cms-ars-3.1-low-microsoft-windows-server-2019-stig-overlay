@@ -12,16 +12,16 @@ depends:
   path: ../microsoft-windows-server-2019-stig-baseline
 
 inputs:
+  - name: max_pass_lockout #V-93141
+    desc: "Account lockout threshold is recommended to be 3 or less invalid logon attempts [3]"
+    type: Numeric
+    value: 5
+    profile: microsoft-windows-server-2019-stig-baseline
+
   - name: pass_lock_time #V-93143
     desc: "Sets the number of min before a session is locked out [15]"
     type: Numeric
     value: 120
-    profile: microsoft-windows-server-2019-stig-baseline
-
-  - name: pass_lock_duration #V-93145
-    desc: "Account lockout duration must be configured to [15] minutes or greater"
-    type: Numeric
-    value: 60
     profile: microsoft-windows-server-2019-stig-baseline
 
   - name: maximum_idle_time #V-93509
@@ -48,13 +48,19 @@ inputs:
     value: 15
     profile: microsoft-windows-server-2019-stig-baseline
 
+    - name: app_password_age #V-93209
+    desc: "Set the number of days that manually managed application account passwords must be changed"
+    type: Number
+    value: 60
+    profile: microsoft-windows-server-2019-stig-baseline
+
   - name: unused_account_age #V-93457
     desc: "Set the maximum age in days for unused accounts stated by your organization"
     type: Numeric
     value: 60
     profile: microsoft-windows-server-2019-stig-baseline
 
-  - name: LegalNoticeCaption
+  - name: LegalNoticeCaption #V-93149
     desc: "Use the default values or add an organization-defined legal notice caption"
     type: Array
     value:
@@ -62,7 +68,7 @@ inputs:
       - "US Department of Health and Human Services Warning Statement"
     profile: microsoft-windows-server-2019-stig-baseline
 
-  - name: LegalNoticeText
+  - name: LegalNoticeText #V-93147
     type: string
     value: "* This warning banner provides privacy and security notices consistent with applicable federal laws, directives, and other federal guidance for accessing this Government system, which includes (1) this computer network, (2) all computers connected to this network, and (3) all devices and storage media attached to this network or to a computer on this network.
     * This system is provided for Government authorized use only.
