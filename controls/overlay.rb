@@ -339,7 +339,7 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
     desc  'fix', "Change passwords for manually managed application/service accounts at least every 60 days and when an administrator with knowledge of the password leaves the organization.
       It is recommended that system-managed service accounts be used whenever possible."
   end
-  
+
   control "V-93285" do
     title "Windows Server 2019 maximum age for machine account passwords must be configured to 60 days or less."
     desc  "Computer account passwords are changed automatically on a regular basis. This setting controls the maximum password age that a machine account may have. This must be set to no more than 60 days, ensuring the machine changes its password bi-monthly."
@@ -802,57 +802,97 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
     EnableRopSimExec: ON"
   end
 
+  control "V-93373" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93375" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93377" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
   control "V-93379" do
     impact 0.0
-    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not mandatory  for this security categorization in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not mandatory for this security categorization in CMS ARS 3.1"
   end
 
   control "V-93425" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93427" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93429" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93431" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93433" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93435" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
+  end
+
+  control "V-93443" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93445" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93447" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93449" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93451" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93453" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93455" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1"
   end
 
   control "V-93457" do
     desc  "check", "Open \"Windows PowerShell\".
 
     Domain Controllers:
-    Enter \"Search-ADAccount -AccountInactive -UsersOnly -TimeSpan 60.00:00:00\"
-    This will return accounts that have not been logged on to for 60 days, along with various attributes such as the Enabled status and LastLogonDate.
+    Enter \"Search-ADAccount -AccountInactive -UsersOnly -TimeSpan 90.00:00:00\"
+    This will return accounts that have not been logged on to for 90 days, along with various attributes such as the Enabled status and LastLogonDate.
 
     Member servers and standalone systems:
     Copy or enter the lines below to the PowerShell window and enter. (Entering twice may be required. Do not include the quotes at the beginning and end of the query.)
@@ -874,10 +914,10 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
     - Built-in guest account (Renamed, Disabled, SID ending in 501)
     - Application accounts
 
-    If any enabled accounts have not been logged on to within the past 60 days, this is a finding.
+    If any enabled accounts have not been logged on to within the past 90 days, this is a finding.
 
     Inactive accounts that have been reviewed and deemed to be required must be documented with the ISSO."
-    desc  "fix", "Regularly review accounts to determine if they are still active. Remove or disable accounts that have not been used in the last 60 days."
+    desc  "fix", "Regularly review accounts to determine if they are still active. Remove or disable accounts that have not been used in the last 90 days."
   end
 
   control "V-93463" do
@@ -907,105 +947,59 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
     desc  "fix", "Configure the policy value for Computer Configuration >> Windows Settings >> Security Settings >> Account Policies >> Password Policy >> \"Enforce password history\" to \"6\" passwords remembered."
   end
 
-  control "V-93483" do
-    title "Windows Server 2019 domain Controller PKI certificates must be issued by the CMS PKI or an approved External Certificate Authority (ECA)."
-    desc  "check", "This applies to domain controllers. It is NA for other systems.
-      Run \"MMC\".
-      Select \"Add/Remove Snap-in\" from the \"File\" menu.
-      Select \"Certificates\" in the left pane and click the \"Add >\" button.
-      Select \"Computer Account\" and click \"Next\".
-      Select the appropriate option for \"Select the computer you want this snap-in to manage\" and click \"Finish\".
-      Click \"OK\".
-      Select and expand the Certificates (Local Computer) entry in the left pane.
-      Select and expand the Personal entry in the left pane.
-      Select the Certificates entry in the left pane. In the right pane, examine the \"Issued By\" field for the certificate to determine the issuing CA.
-      If the \"Issued By\" field of the PKI certificate being used by the domain controller does not indicate the issuing CA is part of the CMS PKI or an approved ECA, this is a finding.
-      If the certificates in use are issued by a CA authorized by the Component's CIO, this is a CAT II finding."
-    desc  "fix", "Obtain a server certificate for the domain controller issued by the CMS PKI or an approved ECA."
+  control "V-93481" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
 
-    describe "For this CMS ARS 3.1 overlay, this control must be reviewed manually" do 
-      skip "For this CMS ARS 3.1 overlay, this control must be reviewed manually"
-    end
+  control "V-93483" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93485" do
-    title "Windows Server 2019 PKI certificates associated with user accounts must be issued by a CMS PKI or an approved External Certificate Authority (ECA)."
-
-    describe "For this CMS ARS 3.1 overlay, this control must be reviewed manually" do 
-      skip "For this CMS ARS 3.1 overlay, this control must be reviewed manually"
-    end
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93487" do
-    title "Windows Server 2019 must have the CMS Root Certificate Authority (CA) certificates installed in the Trusted Root Store."
-    desc  "To ensure secure CMS websites and CMS-signed code are properly validated, the system must trust the CMS Root CAs. The CMS root certificates will ensure that the trust chain is established for server certificates issued from the CMS CAs."
-    desc  "check", "Verify the CMS Root CA certificates are installed in the Trusted Root Store."
-    desc  "fix", "Install the CMS Root CA certificates."
-  
-    describe "For this CMS ARS 3.1 overlay, this control must be reviewed manually" do 
-      skip "For this CMS ARS 3.1 overlay, this control must be reviewed manually"
-    end
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
   
   control "V-93489" do
-    title "Windows Server 2019 must have the CMS Interoperability Root Certificate Authority (CA) cross-certificates installed in the Untrusted Certificates Store on unclassified systems."
-    desc  "To ensure users do not experience denial of service when performing certificate-based authentication to CMS websites due to the system chaining to a root other than CMS Root CAs, the CMS Interoperability Root CA cross-certificates must be installed in the Untrusted Certificate Store. This requirement only applies to unclassified systems."
-    desc  "check", "This is applicable to unclassified systems. It is NA for others.
-    Verify that the CMS Interoperability Root Certificate Authority (CA) cross-certificates is installed in the Untrusted Certificates Store on unclassified systems."
-    desc  "fix", "Install the CMS Interoperability Root CA cross-certificates on unclassified systems."
-    
-    describe "For this CMS ARS 3.1 overlay, this control must be reviewed manually" do 
-      skip "For this CMS ARS 3.1 overlay, this control must be reviewed manually"
-    end
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93491" do
     impact 0.0
-    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the CCEB is not applicable to CMS"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93493" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93499" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not mandatory in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not mandatory in CMS ARS 3.1"
   end
 
   control "V-93501" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not mandatory in CMS ARS 3.1"
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not mandatory in CMS ARS 3.1"
   end
 
   control 'V-93509' do
-    title 'Windows Server 2019 directory service must be configured to terminate LDAP-based network connections to the directory server after thirty minutes of inactivity.'
-    desc  'check', 'This applies to domain controllers. It is NA for other systems.
-    Open an elevated \"Command Prompt\" (run as administrator).
-    Enter \"ntdsutil\".
-    At the \"ntdsutil:\" prompt, enter \"LDAP policies\".
-    At the \"ldap policy:\" prompt, enter \"connections\".
-    At the \"server connections:\" prompt, enter \"connect to server [host-name]\"
-    (where [host-name] is the computer name of the domain controller).
-    At the \"server connections:\" prompt, enter \"q\".
-    At the \"ldap policy:\" prompt, enter \"show values\".
-    If the value for MaxConnIdleTime is greater than \"1800\" (30 minutes) or is not specified, this is a finding.
-    Enter \"q\" at the \"ldap policy:\" and \"ntdsutil:\" prompts to exit.
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
 
-    Alternately, Dsquery can be used to display MaxConnIdleTime:
-    Open \"Command Prompt (Admin)\".
-    Enter the following command (on a single line).
-    dsquery * \"cn=Default Query Policy,cn=Query-Policies,cn=Directory Service, cn=Windows NT,cn=Services,cn=Configuration,dc=[forest-name]\" -attr LDAPAdminLimits
-
-    The quotes are required and dc=[forest-name] is the fully qualified LDAP name of the domain being reviewed (e.g., dc=disaost,dc=mil).
-    If the results do not specify a \"MaxConnIdleTime\" or it has a value greater than \"1800\" (30 minutes), this is a finding.'
-    desc  'fix', 'Configure the directory service to terminate LDAP-based network connections to the directory server after 30 minutes of inactivity.
-    Open an elevated \"Command prompt\" (run as administrator).
-    Enter \"ntdsutil\".
-    At the \"ntdsutil:\" prompt, enter \"LDAP policies\".
-    At the \"ldap policy:\" prompt, enter \"connections\".
-    At the \"server connections:\" prompt, enter \"connect to server [host-name]\" (where [host-name] is the computer name of the domain controller).
-    At the \"server connections:\" prompt, enter \"q\".
-    At the \"ldap policy:\" prompt, enter \"Set MaxConnIdleTime to 1800\".
-    Enter \"Commit Changes\" to save.
-    Enter \"Show values\" to verify changes.
-    Enter \"q\" at the \"ldap policy:\" and \"ntdsutil:\" prompts to exit.'
+  control "V-93515" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not mandatory in CMS ARS 3.1"
   end
 
   control "V-93517" do
@@ -1043,29 +1037,96 @@ include_controls "microsoft-windows-server-2019-stig-baseline" do
     desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
+  control "V-93531" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93533" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93535" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93537" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93539" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
   control "V-93543" do
     impact 0.0
-    desc "caveat", "This is Not Applicable since the related security control is not included in CMS ARS 3.1"
+    desc "caveat", "'Not applicable for this CMS ARS 3.1
+    overlay, since the related security control is not
+    mandatory in CMS ARS 3.1"
+  end
+
+  control "V-93545" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93547" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93549" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93551" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93553" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93555" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93557" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93559" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93561" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
+  end
+
+  control "V-93563" do
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93565" do
-    desc  "fix", "Ensure Exploit Protection system-level mitigation, \"Randomize memory allocations (Bottom-Up ASLR)\" is turned on. The default configuration in Exploit Protection is \"On by default\" which meets this requirement.
-      Open \"Windows Defender Security Center\".
-      Select \"App & browser control\".
-      Select \"Exploit protection settings\".
-      Under \"System settings\", configure \"Randomize memory allocations
-      (Bottom-Up ASLR)\" to \"On by default\" or \"Use default (<On>)\"."
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
   control "V-93567" do
-    title "Windows Server 2019 must employ automated mechanisms to determine the state of system components with regard to flaw remediation every 72 hours."
-    desc  "Without the use of automated mechanisms to scan for security flaws on a continuous and/or periodic basis, the operating system or other system components may remain vulnerable to the exploits presented by undetected software flaws."
-    desc  "check", "Verify the operating system employs automated mechanisms to determine the state of system components with regard to flaw remediation no less often than once every seventy-two (72) hours. If it does not, this is a finding."
-    desc  "fix", "Configure the operating system to employ automated mechanisms to determine the state of system components with regard to flaw remediation no less often than once every seventy-two (72) hours."
-
-    describe "A manual review is required to verify the operating system employs automated mechanisms to determine the state of system components with regard to flaw remediation no less often than once every seventy-two (72) hours. If it does not, this is a finding." do	
-      skip "A manual review is required to verify the operating system employs automated mechanisms to determine the state of system components with regard to flaw remediation no less often than once every seventy-two (72) hours. If it does not, this is a finding."	
-    end
+    impact 0.0
+    desc "caveat", "Not applicable for this CMS ARS 3.1 overlay, since the related security control is not included in CMS ARS 3.1 for this system categorization"
   end
 
-  end
+end
