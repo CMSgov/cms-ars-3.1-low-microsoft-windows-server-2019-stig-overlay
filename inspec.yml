@@ -42,7 +42,7 @@ inputs:
     value: 15
     profile: microsoft-windows-server-2019-stig-baseline
 
-    - name: app_password_age #V-93209
+  - name: app_password_age #V-93209
     desc: "Set the number of days that manually managed application account passwords must be changed"
     type: Number
     value: 60
